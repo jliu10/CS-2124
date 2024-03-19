@@ -1,0 +1,46 @@
+zero: 0
+one: 1
+val: 1
+++val: 2
+val: 2
+val++: 2
+val: 3
+(one + zero): 1
+(one + one): 2
+one < one: false
+zero < one: true
+a: 123, b: 1234, c: 124, d: 12345
+a + d: 12468
+d + d: 24690
+a < d: true
+d < a: false
+zero == zero: true
+zero == one: false
+a == a: true
+a == d: false
+d == a: false
+(zero == 0): true
+(one == 0): false
+(1 == one): true
+b: 1234, c: 124
+(c += b): 1358
+b: 1234, c: 1358
+x: 123, a: 123
+x == a: true
+a == x: true
+a < x: false
+a > x: false
+x > a: false
+x >= a: true
+x <= a: true
+x != a: false
+big: 987654321
+big2: 0
+big3: 0
+big4: 987654321
+big5: 98765, big6: 2457
+(big5 + big6): 101222
+(big6 + big5): 101222
+0 is false
+1 is true
+987654321 is true
