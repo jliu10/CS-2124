@@ -118,25 +118,25 @@ public:
      void battle(Noble& opponent) {
           cout << name << " battles " << opponent.name << endl;
           if (strength == 0 && 
-            opponent.getStrength() == 0) {
+            opponent.strength == 0) {
                cout << "Oh, NO! They're both dead! Yuck!" << endl;
           } else if (strength == 
-            opponent.getStrength()) {
+            opponent.strength) {
                this->scaleStrength(0);
                opponent.scaleStrength(0);
                cout << "Mutual Annihilation: " << this->name << " and " << 
                opponent.name << " die at each other's hands" << endl;
           } else if (strength == 0) {
                cout << "He's dead, " << opponent.name << endl;
-          } else if (opponent.getStrength() == 0) {
+          } else if (opponent.strength == 0) {
                cout << "He's dead, " << name << endl;
           } else if (strength > 
-            opponent.getStrength()) {
-               scaleStrength( 1 - (opponent.getStrength() / strength) );
+            opponent.strength) {
+               scaleStrength( 1 - (opponent.strength / strength) );
                opponent.scaleStrength(0);
                cout << name << " defeats " << opponent.name << endl;
           } else {
-               opponent.scaleStrength(1 - (strength / opponent.getStrength()));
+               opponent.scaleStrength(1 - (strength / opponent.strength));
                this->scaleStrength(0);
                cout << opponent.name << " defeats " << name << endl;
           }
